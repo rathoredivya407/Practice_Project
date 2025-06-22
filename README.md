@@ -1,6 +1,6 @@
 # Patient Management System
 
-A simple application containing the record of the patient.
+A simple application containing the records of the patients.
 
 -> built using
 . Go
