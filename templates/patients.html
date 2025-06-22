@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patient List</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Patient List</h1>
+		<table border="1">
+			<thead>
+				<tr>
+					<!-- header cell in table -->
+					<th>ID</th>
+					<th>Full_Name</th>
+					<th>Age</th>
+					<th>Gender</th>
+					<th>InsuranceProvider</th>
+					<th>PolicyNumber</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- handling multiple data -->
+				{{ range . }}
+				<tr>
+					<!-- data in the cell -->
+					<td>{{ .ID }}</td>
+					<td>{{ .FullName }}</td>
+					<td>{{ .Age }}</td>
+					<td>{{ .Gender }}</td>
+					<td>{{ .InsuranceProvider }}</td>
+					<td>{{ .PolicyNumber }}</td>
+				</tr>
+				{{ end }}
+			</tbody>
+        </table>
+        </div>
+    </body>
+</html>
